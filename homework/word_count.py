@@ -22,10 +22,10 @@ def load_input(input_directory):
             names=["line"],
             index_col=None,
         )
-        for file in files
+        for file in files       #por cada file en files crea una lista de llamada dataframes que convierte el contenido del archivo en un dataframe con los atributos marcados (header, delimiter, etc)
     ]
 
-    dataframe = pd.concat(dataframes, ignore_index=True)
+    dataframe = pd.concat(dataframes, ignore_index=True)    #concatena los dataframes en un solo dataframes
 
     return dataframe
 
